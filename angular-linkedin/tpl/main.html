@@ -1,0 +1,34 @@
+<div class="container-fixed">
+	<h1>Hi, {{userprofile.firstName}} {{userprofile.lastName}}</h1>
+	<a href="{{userprofile.publicProfileUrl}}" target="_blank" class="profile-figure"> 
+		<img class="img-polaroid" ng-src="{{userprofile.pictureUrl}}"/>
+	</a>
+</div>
+
+<div class="sharemessage">
+    <h2>Say something:</h2>
+    <textarea rows="4" class="sharemessage-text" ng-model='message' placeholder="say something..."></textarea>
+	<button class="btn btn-primary" ng-click="post()">Share</button>
+</div>
+
+
+<div class="connection" ng-hide="connections == null">
+	<h2>Connections</h2>
+	  <a ng-click="getLinkedInConnection(5)">5</a>|
+	  <a ng-click="getLinkedInConnection(15)"> 15</a>|
+      <a ng-click="getLinkedInConnection(25)"> 25</a>
+	<ul>
+		<li class="connection-list" ng-repeat='connection in connections'>
+		    <div>
+		        <a class="connection-pic" href="{{connection.pictureUrl}}"><img src="{{connection.pictureUrl}}" alt="{{connection.firstName}}"></a>
+		    	<span>{{connection.firstName}}</span>
+  			    <span>{{connection.lastName}}</span>
+  			    <span class="connection-headline">{{connection.headline}}</span>
+		    </div>
+  			<div class="connection-summary">
+  				<span class="bolder">summary</span> :<span>{{connection.summary}}</span>
+  			</div>
+		</li>
+	</ul>
+</div>
+	

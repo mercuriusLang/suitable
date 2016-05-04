@@ -1,0 +1,65 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.container-fixed{
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.container-fixed h1{
+    display: inline;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.profile-figure{
+    float: left;
+}
+
+.sharemessage{
+	width: 80%;
+	margin: 20px auto;
+}
+
+.sharemessage button{
+	float: right;
+}
+
+.sharemessage-text{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.connection{
+	width: 80%;
+	margin: 20px auto;
+	margin-top: 40px;
+}
+
+.connection-list{
+	text-align: left;
+	border-bottom:1px solid #eee;
+	padding: 15px 0;
+}
+
+.connection-pic{
+    margin-right: 20px;
+}
+
+.connection-headline{
+	float: right;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.connection-summary{
+	margin: 15px 0;
+}
+
+.bolder{
+	font-weight: bolder;
+	font-weight: 700;
+}
